@@ -1,0 +1,499 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_exit.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o (exit)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_clear_bss.o)
+                              main_rCAN_to_USB.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+CAN_MSG_RECEIVED    0x1               main_rCAN_to_USB.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+LOAD main_rCAN_to_USB.o
+LOAD crc_can.o
+LOAD rob_can_config.o
+LOAD rob_can_interrupt.o
+LOAD rob_can_private.o
+LOAD rob_can_public.o
+LOAD uart.o
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51\libc.a
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xc98
+ *(.vectors)
+ .vectors       0x00000000       0x94 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000094                . = ALIGN (0x2)
+                0x00000094                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000094        0x0 linker stubs
+ *(.trampolines*)
+                0x00000094                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000094                __ctors_start = .
+ *(.ctors)
+                0x00000094                __ctors_end = .
+                0x00000094                __dtors_start = .
+ *(.dtors)
+                0x00000094                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000094        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+                0x00000094                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000094        0xc c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000a0       0x1a c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+                0x000000a0                __do_copy_data
+ .init4         0x000000ba       0x10 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_clear_bss.o)
+                0x000000ba                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000ca        0x8 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+ *(.init9)
+ *(.text)
+ .text          0x000000d2        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+                0x000000d2                __vector_28
+                0x000000d2                __vector_1
+                0x000000d2                __vector_34
+                0x000000d2                __vector_24
+                0x000000d2                __vector_12
+                0x000000d2                __bad_interrupt
+                0x000000d2                __vector_6
+                0x000000d2                __vector_31
+                0x000000d2                __vector_35
+                0x000000d2                __vector_3
+                0x000000d2                __vector_23
+                0x000000d2                __vector_30
+                0x000000d2                __vector_25
+                0x000000d2                __vector_11
+                0x000000d2                __vector_13
+                0x000000d2                __vector_19
+                0x000000d2                __vector_7
+                0x000000d2                __vector_27
+                0x000000d2                __vector_5
+                0x000000d2                __vector_4
+                0x000000d2                __vector_9
+                0x000000d2                __vector_2
+                0x000000d2                __vector_15
+                0x000000d2                __vector_36
+                0x000000d2                __vector_29
+                0x000000d2                __vector_8
+                0x000000d2                __vector_26
+                0x000000d2                __vector_14
+                0x000000d2                __vector_10
+                0x000000d2                __vector_16
+                0x000000d2                __vector_20
+ .text          0x000000d6      0x19c main_rCAN_to_USB.o
+                0x000000d6                __vector_17
+                0x0000010a                main
+ .text          0x00000272       0x2a crc_can.o
+                0x00000272                crc_can
+ .text          0x0000029c       0xd2 rob_can_config.o
+                0x00000334                CAN_Config
+                0x0000029c                CAN_Received_Action
+ .text          0x0000036e      0x16e rob_can_interrupt.o
+                0x0000036e                __vector_18
+ .text          0x000004dc      0x148 rob_can_private.o
+                0x000005a0                CAN_get_id
+                0x0000052c                CAN_disable_mob_interrupt
+                0x000004dc                CAN_get_mob
+                0x00000600                CAN_set_data
+                0x000005ea                CAN_set_dlc
+                0x000005f8                CAN_get_dlc
+                0x000005c4                CAN_set_id_mask
+                0x00000572                CAN_set_id
+                0x000004ea                CAN_enable_mob_interrupt
+ .text          0x00000624      0x2e4 rob_can_public.o
+                0x0000063e                CAN_MOb_action
+                0x000007da                CAN_Configure_MOb
+                0x00000796                CAN_Copy_MOb
+                0x0000084e                CAN_init
+                0x00000624                CAN_Reply_Ready
+ .text          0x00000908      0x38c uart.o
+                0x00000968                __vector_22
+                0x00000ace                __vector_32
+                0x00000bbe                uart1_getc
+                0x00000c24                uart1_puts
+                0x00000b8a                uart1_init
+                0x00000c5a                uart1_puts_p
+                0x00000a5e                uart_puts
+                0x00000a94                uart_puts_p
+                0x000009c4                uart_init
+                0x00000b2e                __vector_33
+                0x000009f8                uart_getc
+                0x00000a32                uart_putc
+                0x00000908                __vector_21
+                0x00000bf8                uart1_putc
+ .text          0x00000c94        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_exit.o)
+ .text          0x00000c94        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_clear_bss.o)
+                0x00000c94                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000c94        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x00000c94        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_clear_bss.o)
+                0x00000c94                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000c94        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_exit.o)
+                0x00000c94                exit
+                0x00000c94                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000c94        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000c98                _etext = .
+
+.data           0x00800100       0x18 load address 0x00000c98
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+ .data          0x00800100        0x0 main_rCAN_to_USB.o
+ .data          0x00800100        0x0 crc_can.o
+ .data          0x00800100        0x0 rob_can_config.o
+ .data          0x00800100        0x0 rob_can_interrupt.o
+ .data          0x00800100        0x0 rob_can_private.o
+ .data          0x00800100       0x18 rob_can_public.o
+                0x00800100                AT90CAN_Bitrates
+ .data          0x00800118        0x0 uart.o
+ .data          0x00800118        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_exit.o)
+ .data          0x00800118        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800118                . = ALIGN (0x2)
+                0x00800118                _edata = .
+                0x00800118                PROVIDE (__data_end, .)
+
+.bss            0x00800118       0x9c
+                0x00800118                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800118        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr51/crtcan128.o
+ .bss           0x00800118       0x11 main_rCAN_to_USB.o
+ .bss           0x00800129        0x0 crc_can.o
+ .bss           0x00800129        0x0 rob_can_config.o
+ .bss           0x00800129        0x0 rob_can_interrupt.o
+ .bss           0x00800129        0x0 rob_can_private.o
+ .bss           0x00800129        0x0 rob_can_public.o
+ .bss           0x00800129       0x8a uart.o
+ .bss           0x008001b3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_exit.o)
+ .bss           0x008001b3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr51\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008001b3        0x1 main_rCAN_to_USB.o
+                0x008001b3                CAN_MSG_RECEIVED
+                0x008001b4                PROVIDE (__bss_end, .)
+                0x00000c98                __data_load_start = LOADADDR (.data)
+                0x00000cb0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001b4        0x0
+                0x008001b4                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008001b4                PROVIDE (__noinit_end, .)
+                0x008001b4                _end = .
+                0x008001b4                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xe0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main_rCAN_to_USB.o
+ .debug_aranges
+                0x00000020       0x20 crc_can.o
+ .debug_aranges
+                0x00000040       0x20 rob_can_config.o
+ .debug_aranges
+                0x00000060       0x20 rob_can_interrupt.o
+ .debug_aranges
+                0x00000080       0x20 rob_can_private.o
+ .debug_aranges
+                0x000000a0       0x20 rob_can_public.o
+ .debug_aranges
+                0x000000c0       0x20 uart.o
+
+.debug_pubnames
+                0x00000000      0x321
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x40 main_rCAN_to_USB.o
+ .debug_pubnames
+                0x00000040       0x1e crc_can.o
+ .debug_pubnames
+                0x0000005e       0x4e rob_can_config.o
+ .debug_pubnames
+                0x000000ac       0x37 rob_can_interrupt.o
+ .debug_pubnames
+                0x000000e3       0xc0 rob_can_private.o
+ .debug_pubnames
+                0x000001a3       0x97 rob_can_public.o
+ .debug_pubnames
+                0x0000023a       0xe7 uart.o
+
+.debug_info     0x00000000     0x11d7
+ *(.debug_info)
+ .debug_info    0x00000000      0x2c1 main_rCAN_to_USB.o
+ .debug_info    0x000002c1       0xb4 crc_can.o
+ .debug_info    0x00000375      0x207 rob_can_config.o
+ .debug_info    0x0000057c      0x148 rob_can_interrupt.o
+ .debug_info    0x000006c4      0x21f rob_can_private.o
+ .debug_info    0x000008e3      0x34c rob_can_public.o
+ .debug_info    0x00000c2f      0x5a8 uart.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x7c5
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x135 main_rCAN_to_USB.o
+ .debug_abbrev  0x00000135       0x7b crc_can.o
+ .debug_abbrev  0x000001b0      0x101 rob_can_config.o
+ .debug_abbrev  0x000002b1      0x110 rob_can_interrupt.o
+ .debug_abbrev  0x000003c1      0x116 rob_can_private.o
+ .debug_abbrev  0x000004d7      0x136 rob_can_public.o
+ .debug_abbrev  0x0000060d      0x1b8 uart.o
+
+.debug_line     0x00000000     0x10e4
+ *(.debug_line)
+ .debug_line    0x00000000      0x27c main_rCAN_to_USB.o
+ .debug_line    0x0000027c       0xca crc_can.o
+ .debug_line    0x00000346      0x15c rob_can_config.o
+ .debug_line    0x000004a2      0x25c rob_can_interrupt.o
+ .debug_line    0x000006fe      0x1e8 rob_can_private.o
+ .debug_line    0x000008e6      0x38f rob_can_public.o
+ .debug_line    0x00000c75      0x46f uart.o
+
+.debug_frame    0x00000000      0x290
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 main_rCAN_to_USB.o
+ .debug_frame   0x00000030       0x20 crc_can.o
+ .debug_frame   0x00000050       0x30 rob_can_config.o
+ .debug_frame   0x00000080       0x20 rob_can_interrupt.o
+ .debug_frame   0x000000a0       0xa0 rob_can_private.o
+ .debug_frame   0x00000140       0x60 rob_can_public.o
+ .debug_frame   0x000001a0       0xf0 uart.o
+
+.debug_str      0x00000000      0x5f1
+ *(.debug_str)
+ .debug_str     0x00000000      0x240 main_rCAN_to_USB.o
+                                0x280 (size before relaxing)
+ .debug_str     0x00000240       0x15 crc_can.o
+                                 0xd7 (size before relaxing)
+ .debug_str     0x00000255       0x5c rob_can_config.o
+                                0x19c (size before relaxing)
+ .debug_str     0x000002b1       0x60 rob_can_interrupt.o
+                                0x12c (size before relaxing)
+ .debug_str     0x00000311       0xab rob_can_private.o
+                                0x16d (size before relaxing)
+ .debug_str     0x000003bc       0x8f rob_can_public.o
+                                0x2e9 (size before relaxing)
+ .debug_str     0x0000044b      0x1a6 uart.o
+                                0x26d (size before relaxing)
+
+.debug_loc      0x00000000      0x617
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xa0 main_rCAN_to_USB.o
+ .debug_loc     0x000000a0       0x28 crc_can.o
+ .debug_loc     0x000000c8       0x13 rob_can_config.o
+ .debug_loc     0x000000db       0x26 rob_can_interrupt.o
+ .debug_loc     0x00000101      0x110 rob_can_private.o
+ .debug_loc     0x00000211      0x17a rob_can_public.o
+ .debug_loc     0x0000038b      0x28c uart.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(rCAN_to_USB.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x30 main_rCAN_to_USB.o
+ .debug_ranges  0x00000030       0x60 uart.o
